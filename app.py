@@ -94,7 +94,7 @@ st.markdown(
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/online_shoppers_intention.csv")
+    return pd.read_csv("online_shoppers_intention.csv")
 
 
 try:
@@ -115,7 +115,7 @@ except Exception as e:
 def load_model():
 
     return joblib.load(
-        "models/online_shoppers_rf_pipeline.pkl"
+        "online_shoppers_rf_pipeline.pkl"
     )
 
 
